@@ -15,7 +15,11 @@ const Welcome = () => (
 
       <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
         <div className="flex justify-between flex-col w-full h-full">
-          <img src={Collage} alt="logo" className="w-32 cursor-pointer w-96" />
+          <img
+            src={Collage}
+            alt="logo"
+            className="w-32 cursor-pointer w-96 pong"
+          />
         </div>
       </div>
     </div>

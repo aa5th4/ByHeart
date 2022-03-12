@@ -4,26 +4,6 @@ import { AiOutlineClose } from "react-icons/ai";
 
 import ByHeart from "../../images/ByHeart.png";
 
-// import { useNavigate } from "react-router-dom";
-
-// const history = useNavigate();
-// const routeChange1 = () => {
-//   let path = "/Commodities/Medical";
-//   history(path);
-// }
-// const routeChange2 = () => {
-//   let path = "/Commodities/Education";
-//   history(path);
-// }
-// const routeChange3 = () => {
-//   let path = `./Commodities/${value}`;
-//   history(path);
-// }
-// const routeChange4 = () => {
-//   let path = `./Commodities/${value}`;
-//   history(path);
-// }
-
 const NavBarItem = ({ classprops }) => (
   <>
     <li className={`mx-4 cursor-pointer ${classprops}`}>Medical</li>
@@ -39,7 +19,7 @@ const Navbar = () => {
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
-        <img src={ByHeart} alt="logo" className="w-32 cursor-pointer" />
+        <img src={ByHeart} alt="logo" className="w-32 cursor-pointer " />
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         <NavBarItem />
