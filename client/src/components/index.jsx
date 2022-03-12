@@ -29,6 +29,11 @@ export {
     }
         from "./Welcome";
 
+        export {
+            default as Medical
+        }
+            from "./Medical";
+
 
 
 // const rootElement = document.getElementById("root");
