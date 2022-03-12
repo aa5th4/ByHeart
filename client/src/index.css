@@ -171,6 +171,6 @@ animation-name: fadeInLeft;
       transform: scale(1,1);
   }
 }
-img {
+.pingpong {
 animation: zoominoutsinglefeatured 10s forwards infinite;
 }

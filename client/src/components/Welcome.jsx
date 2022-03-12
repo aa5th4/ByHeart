@@ -18,7 +18,7 @@ const Welcome = () => (
           <img
             src={Collage}
             alt="logo"
-            className="w-32 cursor-pointer w-96 pong"
+            className="w-32 cursor-pointer w-96 pingpong"
           />
         </div>
       </div>
