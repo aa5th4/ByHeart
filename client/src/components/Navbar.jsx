@@ -2,10 +2,35 @@ import React from "react";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
 
-import logo from "../../images/logo.png";
+import ByHeart from "../../images/ByHeart.png";
 
-const NavBarItem = ({ title, classprops }) => (
-  <li className={`mx-4 cursor-pointer ${classprops}`}>{title}</li>
+// import { useNavigate } from "react-router-dom";
+
+// const history = useNavigate();
+// const routeChange1 = () => {
+//   let path = "/Commodities/Medical";
+//   history(path);
+// }
+// const routeChange2 = () => {
+//   let path = "/Commodities/Education";
+//   history(path);
+// }
+// const routeChange3 = () => {
+//   let path = `./Commodities/${value}`;
+//   history(path);
+// }
+// const routeChange4 = () => {
+//   let path = `./Commodities/${value}`;
+//   history(path);
+// }
+
+const NavBarItem = ({ classprops }) => (
+  <>
+    <li className={`mx-4 cursor-pointer ${classprops}`}>Medical</li>
+    <li className={`mx-4 cursor-pointer ${classprops}`}>Education</li>
+    <li className={`mx-4 cursor-pointer ${classprops}`}>Calamity</li>
+    <li className={`mx-4 cursor-pointer ${classprops}`}>Elderly</li>
+  </>
 );
 
 const Navbar = () => {
@@ -14,18 +39,12 @@ const Navbar = () => {
   return (
     <nav className="w-full flex md:justify-center justify-between items-center p-4">
       <div className="md:flex-[0.5] flex-initial justify-center items-center">
-        <img
-          src={logo}
-          alt="logo"
-          className="w-32 animate-ping cursor-pointer"
-        />
+        <img src={ByHeart} alt="logo" className="w-32 cursor-pointer" />
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
-        {["Market", "Exchange", "Tutorials", "Wallets"].map((item, index) => (
-          <NavBarItem key={item + index} title={item} />
-        ))}
+        <NavBarItem />
         <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
-          Login
+          Contact Us
         </li>
       </ul>
       <div className="flex relative">
@@ -51,15 +70,7 @@ const Navbar = () => {
             <li className="text-xl w-full my-2">
               <AiOutlineClose onClick={() => setToggleMenu(false)} />
             </li>
-            {["Market", "Exchange", "Tutorials", "Wallets"].map(
-              (item, index) => (
-                <NavBarItem
-                  key={item + index}
-                  title={item}
-                  classprops="my-2 text-lg"
-                />
-              )
-            )}
+            <NavBarItem classprops="my-2 text-lg" />
           </ul>
         )}
       </div>
