@@ -12,6 +12,7 @@ contract Transactions {
         address receiver,
         uint256 amount,
         string message,
+        string field,
         uint256 timestamp,
         string keyword
     );
@@ -21,6 +22,7 @@ contract Transactions {
         address receiver;
         uint256 amount;
         string message;
+        string field;
         uint256 timestamp;
         string keyword;
     }
@@ -31,6 +33,7 @@ contract Transactions {
         address payable receiver,
         uint256 amount,
         string memory message,
+        string memory field,
         string memory keyword
     ) public {
         transactionCount += 1;

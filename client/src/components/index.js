@@ -10,10 +10,10 @@ export {
     default as Welcome
 }
 from "./Welcome";
-// export {
-//     default as Footer
-// }
-// from "./Footer";
+export {
+    default as Footer
+}
+from "./Footer";
 export {
     default as Services
 }
@@ -22,3 +22,8 @@ export {
     default as Transactions
 }
 from "./Transactions";
+
+export {
+    default as Medical
+}
+from "./Medical";
