@@ -37,14 +37,11 @@ const Payment = () => {
   return (
 
     <div className="flex w-full justify-center items-center">
-      <ScrollAnimation animateIn="fadeInLeft" className="mb-lg-5">
       <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
         <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
-        <ScrollAnimation animateIn="fadeInUp" className="mb-lg-5">
           <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
             Send Crypto <br /> for good cause
           </h1>
-        </ScrollAnimation>
           <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
             Explore the crypto world. Buy and sell cryptocurrencies easily on Krypto.
           </p>
@@ -120,7 +117,6 @@ const Payment = () => {
           </div>
         </div>
       </div>
-      </ScrollAnimation>
     </div> 
   );
 };
