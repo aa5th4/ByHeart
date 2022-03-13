@@ -174,3 +174,51 @@ animation-name: fadeInLeft;
 .pingpong {
 animation: zoominoutsinglefeatured 10s forwards infinite;
 }
+
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/* @keyframes rotating
+	{
+	from
+		{
+		transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-webkit-transform: rotate(0deg);
+		}
+	to
+		{
+		transform: rotate(360deg);
+		-o-transform: rotate(360deg);
+		-ms-transform: rotate(360deg);
+		-moz-transform: rotate(360deg);
+		-webkit-transform: rotate(360deg);
+		}
+	} */
+
+  @keyframes loader {
+    0% {
+      rotate: 0deg;
+      border-radius: 40%;
+    }
+    100% {
+      border-radius: 0%;
+      rotate: 180deg;
+    }
+  }
+  
+.rotate
+	{
+    animation: loader 2.5s infinite;
+	}
