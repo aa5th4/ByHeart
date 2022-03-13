@@ -11,8 +11,8 @@ const ServiceCard = ({ color, title, icon, subtitle }) => (
       {icon}
     </div>
     <div className="ml-5 flex flex-col flex-1">
-      <h3 className="mt-2 text-white text-lg">{title}</h3>
-      <p className="mt-1 text-white text-sm md:w-9/12">{subtitle}</p>
+      <h3 className="mt-2 text-lg">{title}</h3>
+      <p className="mt-1 text-sm md:w-9/12 font-light">{subtitle}</p>
     </div>
   </div>
 );
@@ -26,7 +26,7 @@ const Services = () => (
           <br />
           continue to improve
         </h1>
-        <p className="text-left my-2 text-white font-light md:w-9/12 w-11/12 text-base">
+        <p className="text-left my-2 md:w-9/12 w-11/12 text-base">
           The best choice for buying and selling your crypto assets, with the
           various super friendly services we offer
         </p>

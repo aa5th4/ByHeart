@@ -7,7 +7,7 @@ const Welcome = () => (
         <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
           Send Crypto <br /> for good cause
         </h1>
-        <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base animated fadeInRight">
+        <p className="text-left text-black md:w-9/12 w-11/12 text-base animated fadeInRight">
           Explore the crypto world. Buy and sell cryptocurrencies easily on
           Krypto.
         </p>

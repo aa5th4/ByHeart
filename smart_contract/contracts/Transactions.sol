@@ -14,7 +14,6 @@ contract Transactions {
         string message,
         string field,
         uint256 timestamp,
-        string keyword
     );
 
     struct TransferStruct {
@@ -24,7 +23,6 @@ contract Transactions {
         string message;
         string field;
         uint256 timestamp;
-        string keyword;
     }
 
     TransferStruct[] transactions;
@@ -33,8 +31,7 @@ contract Transactions {
         address payable receiver,
         uint256 amount,
         string memory message,
-        string memory field,
-        string memory keyword
+        string memory field
     ) public {
         transactionCount += 1;
         transactions.push(
@@ -44,7 +41,6 @@ contract Transactions {
                 amount,
                 message,
                 block.timestamp,
-                keyword
             )
         );
 
@@ -53,8 +49,7 @@ contract Transactions {
             receiver,
             amount,
             message,
-            block.timestamp,
-            keyword
+            block.timestamp
         );
     }
 

@@ -34,11 +34,11 @@ const Payment = () => {
   } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo, amount, keyword, message } = formData;
+    const { addressTo, amount, message } = formData;
 
     e.preventDefault();
 
-    if (!addressTo || !amount || !keyword || !message) return;
+    if (!addressTo || !amount || !message) return;
 
     sendTransaction();
   };
@@ -56,15 +56,9 @@ const Payment = () => {
               handleChange={handleChange}
             />
             <Input
-              placeholder="Amount (ETH)"
+              placeholder="Amount (MATIC)"
               name="amount"
               type="number"
-              handleChange={handleChange}
-            />
-            <Input
-              placeholder="Keyword (Gif)"
-              name="keyword"
-              type="text"
               handleChange={handleChange}
             />
             <Input
@@ -82,7 +76,7 @@ const Payment = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+                className="text-white w-full mt-2 border-[1px] p-2 border-[black] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
               >
                 Send now
               </button>
@@ -90,20 +84,7 @@ const Payment = () => {
           </div>
 
           <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
-            <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
-              {!currentAccount && (
-                <button
-                  type="button"
-                  onClick={connectWallet}
-                  className="flex flex-row justify-center items-center my-5 bg-[#2952e3] p-3 rounded-full cursor-pointer hover:bg-[#2546bd]"
-                >
-                  <AiFillPlayCircle className="text-white mr-2" />
-                  <p className="text-white text-base font-semibold">
-                    Connect Wallet
-                  </p>
-                </button>
-              )}
-            </div>
+            
             <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
               <div className="flex justify-between flex-col w-full h-full">
                 <div className="flex justify-between items-start">
@@ -117,10 +98,24 @@ const Payment = () => {
                     {shortenAddress(currentAccount)}
                   </p>
                   <p className="text-white font-semibold text-lg mt-1">
-                    Ethereum
+                    MATIC
                   </p>
                 </div>
               </div>
+            </div>
+            <div className="flex flex-1 justify-start items-start flex-col mf:mr-10">
+              {!currentAccount && (
+                <button
+                  type="button"
+                  onClick={connectWallet}
+                  className="flex flex-row justify-center items-center my-5 bg-[#5c264c66] p-3 rounded-full w-full cursor-pointer hover:bg-[#5c264c98]"
+                >
+                  <AiFillPlayCircle className="text-white mr-2" />
+                  <p className="text-white text-base font-semibold">
+                    Connect Wallet
+                  </p>
+                </button>
+              )}
             </div>
           </div>
         </div>
