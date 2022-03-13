@@ -20,7 +20,7 @@ const Medical = () => {
 
   window.addEventListener("scroll", reveal);
   return (
-    <div>
+    <div className="grid ">
       <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-5 p-10 justify-center items-center lg:ml-20 reveal">
         <div class="m-2 bg-white rounded-lg shadow-xl lg:flex lg:max-w-lg cursor-pointer ">
           <img src={calamity} class="w-1/1 lg:w-1/2 rounded-l-2xl" />
