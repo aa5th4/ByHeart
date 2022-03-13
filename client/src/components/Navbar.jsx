@@ -23,8 +23,10 @@ const Navbar = () => {
       </div>
       <ul className="text-white md:flex hidden list-none flex-row justify-between items-center flex-initial">
         <NavBarItem />
-        <li className="bg-[#2952e3] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#2546bd]">
+        <li className="bg-[#5c264c66] py-2 px-7 mx-4 rounded-full cursor-pointer hover:bg-[#5c264c90]">
+          <a href="#footer">
           Contact Us
+          </a>
         </li>
       </ul>
       <div className="flex relative">
