@@ -62,12 +62,6 @@ const Payment = () => {
               handleChange={handleChange}
             />
             <Input
-              placeholder="Keyword (Gif)"
-              name="keyword"
-              type="text"
-              handleChange={handleChange}
-            />
-            <Input
               placeholder="Enter Message"
               name="message"
               type="text"
@@ -82,7 +76,7 @@ const Payment = () => {
               <button
                 type="button"
                 onClick={handleSubmit}
-                className="text-white w-full mt-2 border-[1px] p-2 border-[#3d4f7c] hover:bg-[#3d4f7c] rounded-full cursor-pointer"
+                className="text-white w-full mt-2 border-[1px] p-2 border-[black] hover:bg-[#993399] rounded-full cursor-pointer"
               >
                 Send now
               </button>
