@@ -34,11 +34,11 @@ const Payment = () => {
   } = useContext(TransactionContext);
 
   const handleSubmit = (e) => {
-    const { addressTo, amount, message } = formData;
+    const { addressTo, amount, keyword, message } = formData;
 
     e.preventDefault();
 
-    if (!addressTo || !amount || !message) return;
+    if (!addressTo || !amount || !keyword || !message) return;
 
     sendTransaction();
   };
@@ -59,6 +59,12 @@ const Payment = () => {
               placeholder="Amount (MATIC)"
               name="amount"
               type="number"
+              handleChange={handleChange}
+            />
+            <Input
+              placeholder="Field"
+              name="keyword"
+              type="text"
               handleChange={handleChange}
             />
             <Input
@@ -84,7 +90,6 @@ const Payment = () => {
           </div>
 
           <div className="flex flex-col flex-1 items-center justify-start w-full mf:mt-0 mt-10">
-            
             <div className="p-3 flex justify-end items-start flex-col rounded-xl h-40 sm:w-72 w-full my-5 eth-card .white-glassmorphism ">
               <div className="flex justify-between flex-col w-full h-full">
                 <div className="flex justify-between items-start">
@@ -97,9 +102,7 @@ const Payment = () => {
                   <p className="text-white font-light text-sm">
                     {shortenAddress(currentAccount)}
                   </p>
-                  <p className="text-white font-semibold text-lg mt-1">
-                    MATIC
-                  </p>
+                  <p className="text-white font-semibold text-lg mt-1">MATIC</p>
                 </div>
               </div>
             </div>

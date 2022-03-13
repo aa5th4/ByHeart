@@ -27,29 +27,29 @@ const Services = () => (
           continue to improve
         </h1>
         <p className="text-left my-2 md:w-9/12 w-11/12 text-base">
-          The best choice for buying and selling your crypto assets, with the
-          various super friendly services we offer
+          Dedicated relationship manager to address all your fundraising needs.
+          Receive help and support anytime, anywhere
         </p>
       </div>
 
       <div className="flex-1 flex flex-col justify-start items-center ">
         <ServiceCard
           color="bg-[#2952E3]"
-          title="Security gurantee"
+          title="Simple setup"
           icon={<BsShieldFillCheck fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Set up your fundraiser effortlessly, in 3 simple steps"
         />
         <ServiceCard
           color="bg-[#8945F8]"
-          title="Best exchange rates"
+          title="Easy fund withdrawal"
           icon={<BiSearchAlt fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="Provide all the necessary documents (government ID proof, bank account details etc.), request transfer and withdraw funds safely in a few simple steps"
         />
         <ServiceCard
           color="bg-[#F84550]"
-          title="Fastest transactions"
+          title="All-in-one web app"
           icon={<RiHeart2Fill fontSize={21} className="text-white" />}
-          subtitle="Security is guranteed. We always maintain privacy and maintain the quality of our products"
+          subtitle="The most secure encryption technology to keep your funds safe ​"
         />
       </div>
       <div className="flex-1 flex flex-col justify-start items-center">

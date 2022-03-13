@@ -8,8 +8,11 @@ const Welcome = () => (
           Send Crypto <br /> for good cause
         </h1>
         <p className="text-left text-black md:w-9/12 w-11/12 text-base animated fadeInRight">
-          Explore the crypto world. Buy and sell cryptocurrencies easily on
-          Krypto.
+          Your help, support and kindness will fight for the betterment of
+          society with transparency. We work towards creating quality and
+          equitable opportunities for children and communities to learn and grow
+          to long-term sustainable change. Donate to dedicated, locally-led
+          disaster relief, medical emergencies and social causes.
         </p>
       </div>
 

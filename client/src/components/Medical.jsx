@@ -1,6 +1,6 @@
 import calamity from "../../images/calamity.jpg";
 import education from "../../images/education.jpg";
-import elderly from "../../images/calamity.jpg";
+import elderly from "../../images/elderly.jpg";
 import health from "../../images/health.jpg";
 
 const Medical = () => {
@@ -25,12 +25,10 @@ const Medical = () => {
         <div class="m-2 bg-white rounded-lg shadow-xl lg:flex lg:max-w-lg cursor-pointer ">
           <img src={calamity} class="w-1/1 lg:w-1/2 rounded-l-2xl" />
           <div class="p-6 bg-gray-50">
-            <h2 class="mb-2 text-2xl font-bold text-gray-900">
-              horizantal Image
-            </h2>
+            <h2 class="mb-2 text-2xl font-bold text-gray-900">Calamity</h2>
             <p class="text-gray-600 mb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              ipsum ab rem, consequuntur autem totam sit minima porro?
+              Relief the affected Support the public rescue operations Provide
+              the supplies for people in need
             </p>
             <p class="text-gray-600 mb-2">Address To:</p>
             <p class="text-gray-600">
@@ -43,12 +41,10 @@ const Medical = () => {
         <div class="m-2 bg-white rounded-lg shadow-xl lg:flex lg:max-w-lg cursor-pointer">
           <img src={education} class="w-1/1 lg:w-1/2 rounded-l-2xl" />
           <div class="p-6 bg-gray-50">
-            <h2 class="mb-2 text-2xl font-bold text-gray-900">
-              horizantal Image
-            </h2>
+            <h2 class="mb-2 text-2xl font-bold text-gray-900">Education</h2>
             <p class="text-gray-600 mb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              ipsum ab rem, consequuntur autem totam sit minima porro?
+              Feed a child Give the child a sense of purpose Provide them with
+              healthcare, education and nutrition
             </p>
             <p class="text-gray-600 mb-2">Address To:</p>
             <p class="text-gray-600">
@@ -63,12 +59,11 @@ const Medical = () => {
         <div class="m-2 bg-white rounded-lg shadow-xl lg:flex lg:max-w-lg cursor-pointer">
           <img src={elderly} class="w-1/1 lg:w-1/2 rounded-l-2xl" />
           <div class="p-6 bg-gray-50">
-            <h2 class="mb-2 text-2xl font-bold text-gray-900">
-              horizantal Image
-            </h2>
+            <h2 class="mb-2 text-2xl font-bold text-gray-900">Elderly</h2>
             <p class="text-gray-600 mb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              ipsum ab rem, consequuntur autem totam sit minima porro?
+              Support the elderly and differently-abled Provide an opportunity
+              for both to learn new skills Help them live with respect and
+              dignity
             </p>
             <p class="text-gray-600 mb-2">Address To:</p>
             <p class="text-gray-600">
@@ -82,12 +77,10 @@ const Medical = () => {
         <div class="m-2 bg-white rounded-lg shadow-xl lg:flex lg:max-w-lg cursor-pointer">
           <img src={health} class="w-1/1 lg:w-1/2 rounded-l-2xl" />
           <div class="p-6 bg-gray-50">
-            <h2 class="mb-2 text-2xl font-bold text-gray-900">
-              horizantal Image
-            </h2>
+            <h2 class="mb-2 text-2xl font-bold text-gray-900">Health</h2>
             <p class="text-gray-600 mb-2">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
-              ipsum ab rem, consequuntur autem totam sit minima porro?
+              Support patients and caregivers Support rehabilitation programs
+              Raise awareness about specific diseases
             </p>
             <p class="text-gray-600 mb-2">Address To:</p>
             <p class="text-gray-600">
